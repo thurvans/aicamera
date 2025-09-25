@@ -13,7 +13,7 @@ cache: false
 device: cpu
 workers: 0
 project: models
-name: yolov8_xray5
+name: yolov8_xray54
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -103,4 +103,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: /workspaces/aicamera/models/yolov8_xray5
+save_dir: /workspaces/aicamera/models/yolov8_xray54
