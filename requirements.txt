@@ -1,0 +1,16 @@
+python>=3.10
+ultralytics>=8.2.0
+torch>=2.0
+opencv-python
+numpy
+pandas
+pillow
+pyyaml
+scikit-learn
+albumentations
+tqdm
+kaggle
+fastapi
+uvicorn[standard]
+sqlalchemy
+python-dotenv

@@ -1,0 +1,4 @@
+train: /workspaces/aicamera/data/processed/train/images
+val: /workspaces/aicamera/data/processed/val/images
+nc: 6
+names: ['gun','knife','wrench','pliers','scissors','hammer']
