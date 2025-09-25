@@ -1,20 +1,12 @@
-# ---- AI project ignores ----
-# model weights
 *.pt
 *.pth
 *.ckpt
 *.onnx
 models/**/weights/*.pt
-
-# training outputs
 runs/
-
-# datasets dan arsip besar
 data/raw/
 *.zip
 *.tar.gz
-
-# python/venv
 __pycache__/
 *.pyc
 .venv/
