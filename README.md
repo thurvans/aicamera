@@ -1,8 +1,21 @@
-# AI Camera – Hidden Dangerous Object Detection (Baggage/X-ray)
+# 🛡️ AI Camera – X-Ray Dangerous Object Detector (Baggage/X-ray)
 
-Model deteksi objek berbahaya (gun, knife, pliers, wrench, scissors, hammer) pada citra X-ray bagasi/tas. 
-Pipeline lengkap: download dataset (Kaggle), konversi label ke YOLO, augmentasi sintetik, training YOLOv8, evaluasi, 
-inferensi kamera real-time (OpenCV), logging ke DB, dan REST API (FastAPI).
+Proyek ini adalah sistem kamera AI untuk mendeteksi **benda berbahaya** (misalnya: gun, knife, wrench, pliers, scissors, hammer) pada gambar/video hasil X-ray bagasi.  
+Dibangun menggunakan **YOLOv8 + FastAPI**, mendukung training, evaluasi, inferensi kamera/gambar/video, dan logging hasil ke SQLite.
 
-## Cepat Mulai
-1) Python 3.10+, pasang dependency:
+---
+
+## 📦 Persiapan Lingkungan
+
+Gunakan Python 3.10+.
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+
+pip install -U pip
+# Torch CPU-only (ringan di server / Codespaces)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+# Paket utama
+pip install ultralytics fastapi uvicorn numpy pandas pillow pyyaml tqdm opencv-python-headless
